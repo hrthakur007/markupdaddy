@@ -2,47 +2,54 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-100 bg-white/85 backdrop-blur-md transition-all">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-tr from-teal-500 to-indigo-500 flex items-center justify-center text-white font-black text-lg transition-transform group-hover:scale-105">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-teal-400 flex items-center justify-center text-white font-black text-xl shadow-md shadow-indigo-500/10 transition-transform group-hover:scale-105">
                 M
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-teal-400 to-indigo-400 bg-clip-text text-transparent group-hover:from-teal-300 group-hover:to-indigo-300 transition-colors">
+              <span className="text-xl font-bold bg-gradient-to-r from-indigo-700 via-indigo-600 to-teal-600 bg-clip-text text-transparent transition-all group-hover:opacity-90">
                 MarkupDaddy
               </span>
             </Link>
             
             <nav className="hidden md:flex items-center gap-6">
               <Link
-                href="/"
-                className="text-sm font-medium text-neutral-300 hover:text-white transition-colors"
+                href="/#services"
+                className="text-sm font-semibold text-neutral-600 hover:text-indigo-600 transition-colors"
               >
-                Home
+                Services
               </Link>
-              <a
-                href="https://wordpress.org"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-medium text-neutral-400 hover:text-white transition-colors"
+              <Link
+                href="/#tech"
+                className="text-sm font-semibold text-neutral-600 hover:text-indigo-600 transition-colors"
               >
-                WordPress backend
-              </a>
+                Technologies
+              </Link>
+              <Link
+                href="/#testimonials"
+                className="text-sm font-semibold text-neutral-600 hover:text-indigo-600 transition-colors"
+              >
+                Testimonials
+              </Link>
+              <Link
+                href="/#insights"
+                className="text-sm font-semibold text-neutral-600 hover:text-indigo-600 transition-colors"
+              >
+                Insights
+              </Link>
             </nav>
           </div>
 
           <div className="flex items-center gap-4">
-            <a
-              href="https://vercel.com"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full bg-neutral-900 px-4 py-1.5 text-xs font-semibold text-neutral-200 border border-neutral-800 hover:bg-neutral-800 hover:text-white transition-colors"
+            <Link
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2 text-sm font-bold text-white shadow-md shadow-indigo-600/10 hover:bg-indigo-500 transition-colors"
             >
-              <span>Hosted on Vercel</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            </a>
+              Let's Talk
+            </Link>
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050505;
-  --foreground: #e5e5e5;
+  --background: #fcfcfc;
+  --foreground: #171717;
 }
 
 @theme inline {
@@ -18,11 +18,11 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Premium typography style for WordPress HTML Content */
+/* Premium typography style for WordPress HTML Content - LIGHT THEME */
 .wordpress-content {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: #d4d4d4; /* text-neutral-300 */
+  color: #374151; /* text-neutral-700 */
 }
 
 .wordpress-content p {
@@ -32,7 +32,7 @@ body {
 .wordpress-content h2 {
   font-size: 1.875rem; /* text-3xl */
   font-weight: 800; /* font-extrabold */
-  color: #ffffff;
+  color: #111827; /* text-neutral-900 */
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
   letter-spacing: -0.025em;
@@ -41,7 +41,7 @@ body {
 .wordpress-content h3 {
   font-size: 1.5rem; /* text-2xl */
   font-weight: 700; /* font-bold */
-  color: #ffffff;
+  color: #111827; /* text-neutral-900 */
   margin-top: 2rem;
   margin-bottom: 1rem;
   letter-spacing: -0.025em;
@@ -70,43 +70,47 @@ body {
 }
 
 .wordpress-content strong {
-  color: #ffffff;
+  color: #111827;
   font-weight: 600;
 }
 
 .wordpress-content a {
-  color: #2dd4bf; /* text-teal-400 */
+  color: #4f46e5; /* text-indigo-600 */
   text-decoration: underline;
   text-underline-offset: 4px;
   transition: color 0.15s ease;
 }
 
 .wordpress-content a:hover {
-  color: #22d3ee; /* text-cyan-400 */
+  color: #4338ca; /* text-indigo-700 */
 }
 
 .wordpress-content blockquote {
   border-left-width: 4px;
-  border-color: #2d3748;
+  border-color: #e5e7eb; /* border-gray-200 */
   padding-left: 1.25rem;
   font-style: italic;
-  color: #a3a3a3; /* text-neutral-400 */
+  color: #4b5563; /* text-neutral-600 */
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  background-color: #f9fafb; /* bg-gray-50 */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .wordpress-content code {
   font-family: var(--font-mono), monospace;
-  background-color: #171717; /* bg-neutral-900 */
+  background-color: #f3f4f6; /* bg-neutral-100 */
   padding: 0.2rem 0.4rem;
   border-radius: 0.375rem;
   font-size: 0.875em;
-  color: #f43f5e; /* text-rose-500 */
+  color: #db2777; /* text-pink-600 */
 }
 
 .wordpress-content pre {
-  background-color: #0a0a0a;
-  border: 1px solid #262626; /* border-neutral-800 */
+  background-color: #111827; /* bg-neutral-900 */
   padding: 1.25rem;
   border-radius: 0.75rem;
   overflow-x: auto;
@@ -115,7 +119,7 @@ body {
 }
 
 .wordpress-content pre code {
-  color: #2dd4bf; /* text-teal-400 */
+  color: #a5b4fc; /* text-indigo-300 */
   background-color: transparent;
   padding: 0;
   border-radius: 0;
@@ -124,7 +128,7 @@ body {
 
 .wordpress-content img {
   border-radius: 1rem;
-  border: 1px solid #171717;
+  border: 1px solid #e5e7eb;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
